@@ -14,5 +14,5 @@ done
 
 for input in "$out_dir"/*.ts; do
   echo "Compiling $input"
-  asc --runtime none -o "$out_dir/$(basename $input .ts).wasm" "$input"
+  asc --runtime stub -o "$out_dir/$(basename $input .ts).wasm" "$input"
 done

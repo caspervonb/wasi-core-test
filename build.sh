@@ -3,7 +3,6 @@ set -ueo pipefail
 
 src_dir="src"
 out_dir="out"
-wasm_cc="/opt/wasi-sdk/bin/clang"
 
 mkdir -p "$out_dir"
 cp -u $src_dir/*.ts $out_dir

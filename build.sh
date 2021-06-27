@@ -6,11 +6,7 @@ out_dir="out"
 wasm_cc="/opt/wasi-sdk/bin/clang"
 
 mkdir -p "$out_dir"
-
-for input in "$src_dir"/*; do
-  echo "Copying $input"
-  cp $input "$out_dir/$(basename $input)"
-done
+cp -u $src_dir/*.ts $out_dir
 
 for input in "$out_dir"/*.ts; do
   echo "Compiling $input"

@@ -1,4 +1,4 @@
-# WebAssembly System Interface Core Tests
+# wasi-core-test
 
 This repository contains tests written in AssemblyScript for the core specification.
 

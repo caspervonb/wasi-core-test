@@ -8,7 +8,8 @@ wasm_cc="/opt/wasi-sdk/bin/clang"
 mkdir -p "$out_dir"
 cp -u $src_dir/*.ts $out_dir
 
-for input in "$out_dir"/*.ts; do
+cd $out_dir
+for input in *.ts; do
   echo "Compiling $input"
-  asc --runtime stub -o "$out_dir/$(basename $input .ts).wasm" "$input"
+  asc --runtime stub -o "$(basename $input .ts).wasm" "$input"
 done

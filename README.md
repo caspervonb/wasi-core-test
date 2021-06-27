@@ -1,4 +1,4 @@
-# WebAssembly System Interface tests for the core specification
+# WebAssembly System Interface Core Tests
 
 This repository contains tests written in AssemblyScript for the core specification.
 

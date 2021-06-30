@@ -1,9 +1,6 @@
 #!/bin/bash
 set -ueo pipefail
 
-rm -rf out
-bash build.sh
-
 status=0
 
 for input in out/*.wasm; do

@@ -1,6 +1,7 @@
 # wasi-core-test
 
-This repository contains tests written in AssemblyScript for the core specification.
+This repository contains tests written in AssemblyScript for the core
+specification.
 
 ## Building
 
